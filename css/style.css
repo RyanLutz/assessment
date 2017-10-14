@@ -1,0 +1,52 @@
+body{
+  font-size: 18px;
+  font-weight: 300;
+  font-family: 'Roboto', sans-serif;
+}
+h1 {
+  font-size: 2.25rem;
+  font-weight: 600;
+  font-family: 'Raleway', sans-serif;
+  letter-spacing: 0.025rem;
+}
+h2 {
+  font-size: 0.875rem;
+  font-weight: 100;
+  text-transform: uppercase;
+  letter-spacing: 0.25rem;
+}
+h2.grow-line:after{
+  content: "";
+  display: inline-block;
+  height: 1px;
+  width: 20%;
+  margin: 0.4em 0.8em;
+  background-color: white;
+}
+
+.info-card{
+  color: white;
+  background-color: rgb(103, 144, 177);
+  padding: 1em;
+}
+.info-card:hover {
+  background-color: rgb(80, 108, 128);
+}
+.button {
+  display: inline-block;
+  margin: 1em;
+  padding: 0.4em 0.6em;
+  border-bottom: solid 4px white;
+}
+.button a {
+  color: white;
+  font-weight: 400;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.button:hover{
+  background-color: white;
+}
+.button:hover a{
+  color: rgb(35, 35, 35);
+}
