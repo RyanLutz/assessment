@@ -1,4 +1,5 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -7,24 +8,50 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
   </head>
   <link href="https://fonts.googleapis.com/css?family=Raleway:600|Roboto:100,300,400" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/styles.css" rel="stylesheet">
 </head>
 <body>
   <section class="container-fluid">
-    <div class="row">
-      <div class="col-md info-card">
-        <h2 class="grow-line">Technology</h2>
-        <h1>Digital Guide</h1>
-        <p>Mauris nisl velit, aliquet non tellus sit amet, rhoncus rhoncus enim, Aliquam efficitur tempus facilisis. Nulla leo ipsum, maximus vel augue in, luctus rhoncus leo. Maecenas posuere dignissim massa at porttitor.</p>
-        <div class="button">
-          <a href="#">Learn More</a>
+    <div class="row animated-section">
+      <div class="left-panel col-md">
+        <div class="panel-content">
+          <div class="panel-header">
+            <div class="grow-line">
+              <h2>Technology</h2><div><span class="line"></span></div>
+            </div>
+
+          </div>
+          <div class="panel-body">
+          <h1>Digital Guide</h1>
+          <p>Mauris nisl velit, aliquet non tellus sit amet, rhoncus rhoncus enim. Aliquam efficitur tempus facilisis. Nulla leo ipsum, maximus vel augue in, luctus rhoncus leo. Maecenas posuere dignissim massa at porttitor.</p></div>
+
+          <div class="panel-footer">
+            <div class="button">
+              <a href="#">Learn More</a>
+            </div>
+          </div>
         </div>
 
       </div>
-      <div class="col-md picture">
-        <img src="DigitalGuide_01.png" alt="Museum of The Bible Digital Guide">
+      <div class="right-panel col-md">
+        <div class="picture-frame">
+          <div class="picture-overlay"></div>
+          <img src="DigitalGuide_01.png" alt="Museum Digital Guide">
+        </div>
       </div>
     </div>
   </section>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+  <script>
+    $(".button").hover(
+      function() {
+        $(this).closest(".animated-section").addClass("hover");
+      },
+      function() {
+        $(this).closest(".animated-section").removeClass("hover");
+      });
+  </script>
 </body>
 </html>
